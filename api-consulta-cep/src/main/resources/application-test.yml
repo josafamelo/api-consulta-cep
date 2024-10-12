@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: api-cep
+  cloud:
+    discovery:
+      client:
+        simple:
+          instances:
+            api-cep:
+              uri: http://localhost:80

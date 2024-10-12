@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+local: true
+
+logging:
+  path: ./logs  # Caminho dos logs
+  file:
+    name: application.log  # Nome do arquivo de log
+
+
+feign-client:
+  api-consulta-cep-endpoint: localhost:8080
+
+amazon:
+  dynamodb:
+    endpoint: localhost:4566

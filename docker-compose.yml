@@ -1,0 +1,16 @@
+version: '3'
+services:
+  wiremock:
+    image: rodolpheche/wiremock:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock:/home/wiremock:ro  # Monta o diretório local como volume
+
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - SERVICES=dynamodb
+      - DEFAULT_REGION=us-east-1
+    ports:
+      - "4566:4566"

@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "6be8e861-8d25-4fde-9420-01b9c765cc48",
+		"name": "API Consulta CEP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11415475"
+	},
+	"item": [
+		{
+			"name": "Consultar CEP",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
